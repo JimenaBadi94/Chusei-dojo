@@ -1,0 +1,830 @@
+@import "base/fuentes";
+@import "base/colores";
+@import "base/mixins";
+
+/*Etiquetas*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: $montserrat;
+}
+
+/*titulos*/
+.chuseiDojo{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 0.938rem;
+    animation-duration: 3s;
+    animation-name: esfumado;
+}
+
+@keyframes esfumado{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media (max-width:600px){
+        
+    .chuseiDojo{
+        width: 100%;
+    }
+
+    .chuseiDojo img{
+        width: 300px;
+    }
+}
+
+h2{
+    color: $bordo;
+    font-weight: bold;
+    font-size: 1.325rem;
+    text-decoration: underline;
+    margin: 0.938rem;
+}
+
+h3{
+    color: $bordo;
+    font-size: large;
+    text-align: center;
+}
+
+div{
+    h3{
+        color: $bordo;
+        font-size: large;
+        text-align: center;
+    
+        p{
+        color: $beige;
+        }
+    }
+}
+
+h4{
+    color: $blanco;
+    font-size: 1rem;
+}
+
+/*estilos body*/
+body{
+    background-color: $negro;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    min-height: 100%;
+    width: 100%;
+}
+
+/*Estilos section y aside del INICIO*/
+
+.p{
+        color: $blanco;
+            }
+
+/*estilos header, footer y navbar*/
+header{
+    position: relative;
+    margin: 0 auto;
+    grid-area: header;
+}
+footer{
+    background-color: $negro;
+    color: $bordo;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1.563rem;
+    height: 6.875rem;
+    margin-bottom: 0.625rem;
+    clear: both;
+    align-self: flex-end;
+    grid-area: footer;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+footer h5{
+    color: $bordo;
+
+    a{
+        color: $info;
+        font-size: 0.75rem;
+    }
+    
+    p{
+        color: $info;
+        font-size: 0.75rem;
+    }
+}
+
+/*nav bar responsive*/
+nav{
+    background-color: $negro;
+    grid-area: nav;
+    grid-column: 1;
+    grid-row: 1;
+
+    .menu__sm{
+        display: block;
+        color: $bordo;
+        height: 50px;
+        width: 50px;
+    }
+
+    input[type=checkbox]:checked ~ .menu__md{
+        top: 100%;
+        right: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 1.5em;
+        background: $beige;
+        padding: 2em;
+        border-bottom-left-radius: 0.5em;
+        width: 200px;
+        font-weight: 700;
+        z-index: 99;
+        .menu__link{
+            padding: 15px;
+            &:hover{
+                color: $bordo;
+            }
+        }
+
+    }
+
+    .menu__md{
+        display: none;
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            position: relative;
+            display: inline-block;
+            padding: 5px;
+            
+            a{
+            color: $bordo;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+            padding: 20px 40px;
+
+            &:hover{
+                color: $bordo;
+                transition: all .3s;
+                }
+            }
+            &:hover ul{
+                background-color: $beige;
+                width: 90%;
+                transition: all .3s;
+                display: block;
+            }
+            ul{
+                position: absolute;
+                display: none;
+                color: $bordo
+                }
+            }
+        }
+        
+    @media(min-width: 800px){
+            .menu__sm{
+                display: none;
+            }
+            .menu__md{
+                display: flex;
+                flex-flow: row;
+                gap: 20px;
+                font-weight: 700;
+
+                .menu__link{
+                    padding: 15px;
+                    
+                    &:hover{
+                        transition: all .1s;
+                        border: 2px solid $bordo;
+                        background-color: $beige;
+                    }
+                }
+            }
+            
+        }
+    }
+
+ul li a ul li{
+        display: block;
+        padding: 15px;
+        color:$bordo
+}
+
+/*estilos main Inicio*/
+main{
+    section{
+        background-image: url(/css/persona-practicando-arte-marcial-aikido-sobre-fondo-negro_180224-136.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        div{
+            text-align: center;
+            height: 600px;
+            display: flex;
+            align-items: initial;
+            justify-content: center;
+        }
+    }
+}
+
+
+/*estilo formulario de contacto*/
+
+.contacto-form{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    background: $blanco;
+    margin: auto auto;
+}
+
+.contacto-form > *{
+    width: 50%;
+}
+
+    /*primer container*/
+
+    .contacto-form .primer-container{
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/galeria/17.jpeg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacto-form .primer-container .info div{
+        margin: 24px 0;
+    }
+
+    .info div h3{
+        color: $bordo;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1.2;
+        padding-bottom: 10px;
+    }
+
+    .info div:first-of-type p{
+        max-width: 260px;
+        color: $blanco;
+    }
+
+    .info div p{
+        color: $blanco;
+        line-height: 1.6;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /*segundo container*/
+
+    .segundo-container{
+        padding: 30px;
+    }
+
+    .segundo-container h2{
+        font-size: 50px;
+        font-weight: 500;
+        color: $bordo;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .segundo-container form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .segundo-container form .form-grupo{
+        margin-bottom: 10px;
+    }
+
+    .segundo-container form .form-grupo *{
+        min-height: 50px;
+        border: 1px solid rgba(124, 123, 123, 0.5);
+        padding: 0 20px;
+    }
+
+    .segundo-container form .form-grupo label{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid rgba(124, 123, 123, 0.5);
+        font-size: 16px;
+        color: $negro;
+        text-transform: uppercase;
+        margin-top: -1px;
+    }
+
+    .segundo-container form .form-grupo:first-of-type input{
+        margin-right: -5px;
+    }
+
+    .segundo-container form .form-grupo input{
+        width: 100%;
+        font-size: 15px;
+        margin-top: -2px;
+    }
+
+    .segundo-container form .form-grupo input::placeholder,
+    .segundo-container form .form-grupo textarea::placeholder{
+        color: #999;
+    }
+
+    .segundo-container form .form-grupo textarea{
+        width: 100%;
+        min-height: 80px;
+        resize: none;
+        padding: 10px 20px;
+        margin-top: -1px;
+    }
+
+    .segundo-container form button{
+        width: 200px;
+        height: 50px;
+        color: $bordo;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 0;
+        position: relative;
+        left: calc(50% - 100px);
+        cursor: pointer;
+    }
+
+    .segundo-container form button:hover{
+        background: $negro;
+    }
+
+    /*responsive*/
+
+    @media(max-width: 900px){
+        .contacto-form{
+            flex-direction: column-reverse;
+            width: 90vw;
+            margin: auto auto;
+        }
+
+        .contacto-form > *{
+            width: 100%;
+        }
+
+        .contacto-form .primer-container{
+            padding: 40px 0;
+        }
+    }
+
+    @media(max-width: 799px){
+        .contacto-form{
+            flex-direction: column-reverse;
+            width: 90vw;
+            margin: auto auto;
+        }
+
+        .contacto-form > *{
+            width: 100%;
+        }
+
+        .contacto-form .primer-container{
+            padding: 40px 0;
+        }
+    }
+
+
+/*nav*/
+
+.grillaNav{
+    display: grid;
+    grid-template-areas: 
+                "nav nav nav nav nav nav nav";
+    grid-template-columns: auto;
+    justify-content: center;
+    height: 25vh;
+    margin: 0;	
+}
+
+.grillaNav__logoNav{
+    height: 5.625rem;
+    width: 5.625rem;
+}
+
+/*main*/
+
+.container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoMain{
+    height: 10.625rem;
+    width: 10.625rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.boton{
+    display: block;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    text-align: center;
+    border: 1px solid $bordo;
+    color: $bordo;
+    background-color: $negro;
+    border-radius: 8px;
+    text-align:center;
+    padding: auto;
+    margin: 100px auto;
+    cursor: pointer;
+    transition: all .25s;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/*footer*/
+
+.grillaFooter{
+    display: grid;
+    grid-template-areas: "footer footer footer";
+    grid-template-columns: auto;
+    padding-top: 30px;
+}
+
+        /*sitio*/
+        .grillaFooter__sitio{
+            text-align: left;
+            height: 15%;
+            margin: 1.25rem;
+            margin-bottom: 1rem;
+            margin-right: 1.25rem;
+            margin-left: 1.25rem;
+            justify-content: left;
+        }
+
+        /*.grillaFooter__sitio--masInfo{
+
+        }*/
+
+        /*logo*/
+        .grillaFooter__logo{
+            text-align: center;
+            height: 15%;
+            transition: 1s;
+            justify-content: center;
+        }
+
+        .grillaFooter__logo:hover{
+            transform: rotateY(45deg);
+        }
+
+        .grillaFooter__logo--logoFooter{
+            text-align: center;
+            height: 5.625rem;
+            width: 5.625rem;
+            align-content: center;
+        }
+
+        /*redes*/
+
+        .grillaFooter__redes{
+            text-align: right;
+            height: 15%;
+            margin: 1.25rem;
+            margin-bottom: 1rem;
+            margin-right: 1.25rem;
+            margin-left: 1.25rem;
+            align-content: flex-end;
+        }
+
+        .grillaFooter__redes--logoFacebook{
+            width: 30px;
+            margin-top: 0.625rem;
+            margin-left: 1.25rem;
+            margin-right: 1.25rem;
+        }
+
+
+        .grillaFooter__redes--logoInstagram{
+            width: 1.875rem;
+            margin-top: 0.625rem;
+            margin-left: 1.25rem;
+            margin-right: 1.25rem;
+            margin-bottom: 15px;
+        }
+
+
+/*Clase card*/
+
+.containerCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: $negro;
+    padding: 0 20px;
+}
+
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: $beige;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(243, 242, 242, 0.315);
+}
+
+.header{
+    border-right: 1px solid $negro;
+}
+
+.descripcion{
+    background: $beige;
+}
+
+.header, .descripcion{
+    padding: 20px;
+    text-align: center;
+}
+
+.header a{
+    position: relative;
+    display: block;
+}
+
+.header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(243, 242, 242, 0.315);
+    margin: 20px 30px;
+    transition: .2s;
+    height: 200px;
+    width: 200px;
+}
+.header a:hover img{
+    box-shadow: 0 0 0 12px rgba(243, 242, 242, 0.315);
+}
+
+.header h2{
+    color: $bordo;
+}
+
+.header h4{
+    margin-bottom: 20px;
+    color: $negro;
+}
+
+.descripcion{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion h2{
+    color: $bordo;
+    margin: 20px 30px;
+}
+
+.descripcion h4{
+    margin-bottom: 20px;
+    color: $negro;
+}
+
+@media (max-width: 640px){
+    .card-container{
+        display: block;
+        width: 450px;
+    }
+
+    .header{
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+
+    .descripcion{
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+    }
+
+    .header h4{
+        margin: 0;
+    }
+}
+
+/*clases galeria*/
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: $beige;
+}
+
+.linea{
+    background: $bordo;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(124, 123, 123, 0.5);
+}
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box img{
+    width: 75vw;
+    height: 70vh;
+}
+
+.light-box:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: $bordo;
+    color: $blanco;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+/*Section inicio*/
+
+.bienvenidos{
+    font-size: 150px;
+    color: $bordo;
+}
+.containerS{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.subtitulo{
+    color: $beige;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+/*chusei dojo*/
+
+.queEsChuseiDojo{
+    padding-top: 0;
+    text-align: center;
+}
+
+.queEsChuseiDojo__foto{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.queEsChuseiDojo__texto{
+    width: 80%;
+    margin: 0 auto;
+    color: $blanco;
+}
+
+/*historia*/ 
+
+.biografia{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+    color: $blanco;
+}
+
+.biografia__img{
+    text-align: center;
+}
+
+.biografia__img--left{
+    text-align: left;
+}
+.biografia__img--right{
+    text-align: right;
+}
+
+.biografia__picture{
+    max-width: 80%;
+}
+
+.biografia__parrafo{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/*clases sección que es el aikido*/
+.queEsElAikido{
+    margin: 20px 100px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.textoParrafo{
+    color: $blanco;
+}
+
+/*mapa*/
+
+.mapa{
+    width: 100vw;
+    height: 80vh;
+}
+
+@media(max-width: 1000px){
+    .mapa{
+        width: 100vw;
+        height: 70vh;
+    }
+}
+
+@media(max-width: 750px){
+    .mapa{
+        width: 100vw;
+        height: 50vh;
+    }
+}
+
+@media(max-width: 550px){
+    .mapa{
+        width: 100vw;
+        height: 40vh;
+    }
+}
