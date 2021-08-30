@@ -22,32 +22,33 @@
         <header> 
             <div>
                 <div class="chuseiDojo">
-                    <img src="../img/Recurso5.png" alt="Chusei-Dojo">
+                    <a href="../index.html"><img src="../img/Recurso5.png" alt="Chusei-Dojo"></a>
                 </div>
             </div>
 
             <nav class="grillaNav nav"> <!--Barra de navegación-->
-                <a href="#" class="menu__sm">
+                <label for="menu__dropdown" class="menu__sm"><!--MENU HAMBURUGESA-->
                     <span class="iconify" data-icon="whh:menu" data-inline="false"></span> 
-                </a>
+                </label>
+
+                <input type="checkbox" id="menu__dropdown" hidden>
 
                 <ul class="menu__md">
                 
-                <li class="nav-item"><a href="../index.html"><img src="../img/logojime.png" alt="Logo" class="grillaNav__logoNav"></a></li>
-                <li class="nav-item"><a href="../index.html">INICIO</a></li>
-                
-                <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="queEsElAikido.html">¿Qué es el Aikido?</a></li>
-                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
-                    </ul>
-                </li>
-                
-                <li class="nav-item"><a href="diasyhorarios.html">DIAS Y HORARIOS</a></li>
-                <li class="nav-item"><a href="galeria.html">GALERIA</a>
-                </li>
-                <li class="nav-item"><a href="ubicacion.html">UBICACION</a></li>
-                <li class="nav-item"><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="../index.html" class="menu__link menu__link-active">INICIO</a></li>
+                    
+                    <li><a href="#" class="menu__link">SOBRE NOSOTROS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item menu__link" href="../paginas/queEsElAikido.html">¿Qué es el Aikido?</a></li>
+                            <li><a class="dropdown-item menu__link" href="../paginas/historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../paginas/diasyhorarios.html" class="menu__link">DIAS Y HORARIOS</a></li>
+                    <li><a href="../paginas/galeria.html" class="menu__link">GALERIA</a>                 
+                    </li>
+                    <li><a href="../paginas/ubicacion.html" class="menu__link">UBICACION</a></li>
+                    <li><a href="../paginas/contacto.html" class="menu__link">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
@@ -56,7 +57,7 @@
         <main class="container-xxl">
             <section class="row">
                 <div class="col">
-                    <div class="row">
+                    <div class="row container">
                         <img  class="logoMain" src="../img/logojime.png" alt="Logo">
                         <a class="btn btn-outline-danger boton" href="contacto.html" role="button">Empeza ya!</a>
                     </div>
@@ -64,17 +65,181 @@
             </section>
         </main>>
 
-    <section class="sectionSobreNosotros">
+
         <h2>Un poco de historia</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi soluta eaque qui voluptatum reprehenderit 
-            libero ut itaque vel dicta. Nobis veniam obcaecati odit. Delectus exercitationem, alias porro ab voluptatibus
-            vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi, magnam accusamus nulla eos numquam 
-            quas nihil odit vero officia corrupti. Tempore mollitia laboriosam non, numquam voluptas at beatae ad!</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi soluta eaque qui voluptatum reprehenderit 
-            libero ut itaque vel dicta. Nobis veniam obcaecati odit. Delectus exercitationem, alias porro ab voluptatibus
-            vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi, magnam accusamus nulla eos numquam 
-            quas nihil odit vero officia corrupti. Tempore mollitia laboriosam non, numquam voluptas at beatae ad!</p>
-    </section>
+
+        <span class="linea"></span>
+
+        <section class="biografia containerS">
+            
+            <div class="biografia__texto">
+                <h2 class="subtitulo">O'Sensei Morihei Ueshiba 植芝 盛平</h2>
+                        <p class="biografia__parrafo">Único hijo varón entre cuatro hermanas, el Maestro Ueshiba Morihei nació el 14 de diciembre de 1883 en la 
+                        ciudad de Wakayama, en el seno de una familia muy creyente que abrazaba la religión budista 
+                        'Bukio-Shim-Gom-Shiu'. De contextura pequeña y débil, al punto tal que su crecimiento llegó a preocupar mucho a sus padres. 
+                        Concurría desde temprana edad a jugar a un templo muy próximo a su vivienda, cultivando la amistad de los 
+                        monjes y facilitando, que ya a los siete años conociera; a la perfección los textos sagrados de su credo.
+                        Ya adolescente, su sueño era llegar a ser un comerciante. A los 17 años viaja a Tokio (Asakusa) para residir 
+                        en la casa de un pariente propietario de una librería, desempeñándose durante el día en el cuidado del 
+                        comercio. Por las noches asistiría a un dojo de Jiu-Jitsu. El cambio de vida sumado a su debilidad física 
+                        y carácter retraído, influyen para que contraiga beri-beri (kakke), retornando a su hogar completando 
+                        abatido. Entonces comienza su recuperación física, para lo cual camina de tres a cinco kilómetros diarios 
+                        a través de las sierras, y gradualmente supera este distancia, ayudado por el excelente clima hasta 
+                        trotar primero, y finalmente correr unos 10 kilómetros diarios. Por completo recuperado, continúa con 
+                        práctica de artes marciales y gimnasia de toda índole, dedicándose de 9 a 11 horas al día.</p>
+                        <p>A los veinte años ingresa al ejército, pese a su baja estatura (1.56mts) beneficiado por su ahora sólida 
+                        estructura y atlético cuerpo. Su desempeño es sobresaliente en la instrucción y se destaca por sobre todo 
+                        en las artes de combate, particularmente en el Yu Ken Jutsu (el arte del fusil bayoneta). 
+                        Con la idea de luchar en el frente de guerra solicita el permiso correspondiente, el cual le es negado, 
+                        considerando sus superiores que por su gran capacidad cumpliera las funciones de instructor. Insistirá 
+                        tenazmente hasta que la petición tiene lugar en el año 1905, cuando contaba 22 años. 
+                        A poco de llegar al frente de combate en China termina la contienda con la victoria de Japón. Sin demora, 
+                        trata de conocer las armas y artes de guerra chinas, hasta ese momento para él desconocidas.vEl mismo año 
+                        vuelve a Japón y al tiempo deja el ejército. Con la ayuda de sus padres abre un dojo de Sumo 
+                        (arte tradicional japonés) y enseña en el mismo la práctica de Yu Ken Jutsu.</p>
+                        <p>En 1908 recibe el titulo de Yagyu Ryu Jiu Jutsu; tiene entonces 25 años. Es llamado nuevamente por los 
+                        superiores del ejército para que continúe la instrucción de los soldados, pero vislumbrando una nueva 
+                        meta en su vida, decide no reincorporarse a un trabajo fijo, sino dedicarse a lo que será de ahí en más 
+                        su gran sueño: perfeccionar las artes de combate. La tarea que se propone a realizar es tomada con total 
+                        ímpetu, siendo así, por ejemplo, que cada vez que llegaba a su pueblo algún Maestro, lo agasajaba en su 
+                        propio hogar y lo invitaba a su dojo para recibir las experiencias y enseñanzas que le dejaran.
+                        Criado en la naturaleza y habiendo practicado en ella, observa que su pueblo, los campesinos de su tierra 
+                        cansada, emigran a América o Hawai en busca de mejores suelos. Decide viajar al extremo norte de Japón, 
+                        a Hokaido, comenzando a trabajar en agricultura en 1912. Para esa época recibe la enseñanza de diversos 
+                        maestros, uno de ellos el Maestro Takeda Sokaku de Daito Ryu; enseñanza que ayudaran al origen del n
+                        acimiento del Aikido. El gran maestro Sokaku ve en Ueshiba Morihei sensei un gran porvenir y así es invitado 
+                        por el maestro del Daito Ryu al dojo de éste, donde también recibe el conocimiento de sus técnicas, las que 
+                        lo habían cautivado profundamente.</p>
+                        <p>En 1920 retorna a su tierra natal, donde se encuentra con Deguchi Onisaburo, monje de la rama Dai Jonkio 
+                        del Budismo, guía espiritual de su religión y de altísimo carácter moral, a quien consulta a raíz de una 
+                        enfermedad que aquejaba a su padre. De las conversaciones con el monje Onisaburo, versado además en 
+                        distintos temas, extrae la conclusión de que el arte marcial no solamente es luchar y ejercitar el cuerpo, 
+                        sino que además es necesario saber ejercitar el espíritu, si se quiere llegar a una real profundidad y 
+                        conocimiento. Decide así estudiar con el monje, palpar su sabiduría. Se va introduciendo en el gran mundo 
+                        de la filosofía Zen. Juntos emprenden viaje a Manchuria (China), permanece con el monje aproximadamente 
+                        cinco meses tratando de imbuirse de los modos de lucha y sistemas de pensamiento de la región.
+                        De regreso a Japón, recibe consecutivamente la inesperada visita de tres grupos de personas interesados en 
+                        la labor de Ueshiba sensei, quienes exponen diferentes caracteres y puntos de vista al respecto. El primero 
+                        de estos grupos observa con asombro los resultados del trabajo conjunto de Ueshiba sensei y el maestro 
+                        Onisaburo, como la unión ideal del plano espiritual con el plano físico, conociendo la gran fama que a 
+                        ésta altura ostentaba el maestro Ueshiba, los integrantes del segundo grupo solicitan integrarse en 
+                        calidad de discípulos. El tercer grupo lo conforman distintos maestros de otras técnicas de luchas, 
+                        siendo buena parte de ellos instructores que prestaban servicio en diversas regiones de Japón.A medida que 
+                        Ueshiba Morihei iba desarrollando su trabajo, no faltaron quienes dudaron de su eficacia, llegando 
+                        incluso a desafiar al maestro. Lejos de aceptar las provocaciones, Ueshiba Sensei prefería ignorar enemigos 
+                        a combatirlos, lo cual le granjeó nuevos discípulos. Solo en una ocasión, y por la real imposibilidad de evitar 
+                        el reto, acepta combatir con un militar, experto en el arte de Kendo. En el preciso momento del combate, cuando 
+                        el retador se dispone a atacar con el bokken (espada de madera), Ueshiba Morihei presiente donde recibir el 
+                        ataque. Se adelanta al golpe, corta el avance del rival y entra a su vez hacia el centro del cuerpo del oponente, 
+                        a quién derriba sin causarle ningún daño físico; con esto evidencia su neta superioridad ante el adversario, que 
+                        opta por retirarse vencido. Luego del breve combate, secando su cuerpo junto a un aljibe comprende que no fue 
+                        algo físico lo que lo hizo derribar a su rival. Era algo más profundo; Ueshiba Morihei comenta de aquella sensación: 
+                        "Cielo y tierra vibraron ante mí. De la tierra brotó una nube de polvo de oro que envolvió mi cuerpo, transformándome 
+                        en oro sólido, y en ese preciso instante me pareció estar en el aire. Comprendí entonces el lenguaje de los pájaros 
+                        y de la naturaleza, y tuve una clara conciencia del pensamiento de Dios, El Creador del Universo. También comprendí 
+                        que la raíz del arte marcial es el amor de Dios y el amor a los semejantes. En ese momento me brotó una lágrima de 
+                        felicidad". "Por esto el arte marcial no es lastimar con fuerza a un semejante, o con armas, sino que por el contrario 
+                        es el amor hacia el mismo, no es derrotar al mundo con guerras, sino construir un mundo mejor". La experiencia que 
+                        mencionamos le ocurrió un día de primavera en 1925, cuando el maestro contaba 42 años. Así menciona entonces el Aiki 
+                        (principio de unión, armonía) a raíz de las experiencias vividas, las técnicas aprendidas en esos últimos años y 
+                        la evolución que lograba en el plano del espíritu.</p>
+                        <p>En 1927 abre un Dojo en Tokio; cuatro años más tarde funda el dojo Kobukan, famoso por la intensidad de las prácticas. 
+                        Se comentaba que no era permitido pasar por su frente a artistas marciales que no fueran muy seguros de sí 
+                        mismos.
+                        En 1939, con 56 años, su arte es reconocido por el gobierno de Japón. Se forma la Federación Kobukan Hombu 
+                        Dojo. En 1942 se traslada a lwama, en lbaraki, quedando como instructor en Tokio su hijo, el maestro 
+                        Kisshomaru Ueshiba. En Iwama construye al año siguiente el templo de Aikido, Aiki-Jinja. En 1948 transforma 
+                        la Federación Kobukan en Federación Aikikai, que preside actualmente su nieto Moriteru Ueshiba, actual 
+                        autoridad de la Federación Aikikai Hombu Dojo, con sede en Tokio y centro tanto nacional como Internacional 
+                        del arte.
+                        El 26 de Abril de 1969, habiendo sido condecorado cinco veces por el gobierno Japonés, fallece el maestro 
+                        Ueshiba Morihei. Sus restos descansan en Tanabe Wakayama, su tierra natal, dejando sus pertenencias en el 
+                        Aiki-Jinja y en Hombu Dojo.</p>
+            </div>
+
+            <figure class="biografia__img">
+                <img src="../img/osensei2.png" alt="Osensei" class="biografia__picture">
+            </figure>
+
+            <figure class="biografia__img biografia__img--left">
+                <img src="../img/sakanashi.png" alt="Sakanashi" class="biografia__picture">
+            </figure>
+
+            <div class="biografia__texto">
+                <h2 class="subtitulo">Masafumi Sakanashi Shihan 坂梨 雅文</h2>
+                <p class="biografia__parrafo">Nació en Japón el 30 de octubre de 1954 y cuando tenía dos años, sus padres mudaron su residencia a Paraguay 
+                    y luego a Argentina donde cursó sus primeros estudios.
+                    En 1972 regresó a Japón donde se abocó al estudio de las Artes Marciales. Allí obtuvo su Primer Dan de Aikido 
+                    -Kuwamori Dojo-; su Primer Dan de Karate -Karate Kyokushinkai- y su segundo Dan de Judo -Judo Kodokan-.
+                    A la par, también estudió Alineación Postural -Seiseijutsu- con el Profesor Sokabe; Acupuntura -Hari Kiu- con 
+                    el Dr. Sugawara y Quiropraxia -Sei Fuku Shi- en el Instituto Judo Sei Fuku Shi Kai.
+                    En junio de 1978 volvió a la Argentina, abocándose desde entonces y entre otros, a la difusión del Arte Marcial 
+                    “Aikido”.
+                    Fue Director General del Centro de Difusión del Aikido de la República Argentina reconocido por la organización 
+                    internacional Hombu Dojo con sede en Japón, quien en 2007 lo reconoció con el grado de “Shihan”.
+                    Con treinta y cuatro años de impecable trayectoria, cuenta en su haber no solo con innumerables seminarios y 
+                    charlas -dictados tanto a nivel nacional como internacional- sino también con la publicación de reportajes y 
+                    artículos en revistas dedicadas a las artes marciales, siendo de su autoría el libro “Aikido Una forma de vida” 
+                    y de coautoría con el Profesor Leandro Pinkler, las obras “Aikido 1. El desafío del conflicto” (2003, Ed. Kier); 
+                    “Aikido 2. Véncete a ti mismo y vencerás todo” (2007, Editorial Kier) y “Aikido 3. El Guerrero Espiritual” 
+                    (2010, Editorial Kier).
+                    El 08-01-12, Aikikai Hombu Dojo le otorgó la graduación de 7mo dan de Aikido, engrandeciendo aún más al Centro de 
+                    Difusión del Aikido
+                    Lamentablemente, SAKANASHI Masafumi shihan falleció el 10 de febrero de 2012.
+                    </p>
+            </div>
+
+            <figure class="biografia__img biografia__img--right">
+                <img src="../img/leonardosakanashi.png" alt="Leonardo" class="biografia__picture">
+            </figure>
+            
+            <div class="biografia__texto">
+                <h2 class="subtitulo">Leonardo Sakanashi Sensei 坂梨 レオ</h2>
+                <p class="biografia__parrafo">Leonardo Sakanashi, hijo de Masafumi Sakanashi Shihan y Yumiko Waga, hermano de Mariana y Adriana. Comenzó su 
+                práctica de AIKIDO a la temprana edad de 4 años, en el Aikikai Sakanashi Dojo, Casa matriz del Centro de 
+                Difusión del Aikido y primer Dojo fundado por su padre. Asistió a la clase de niños hasta la edad de 11 años, 
+                cuando comenzó su entrenamiento en las clases de mayores.</p>
+                <p>En enero de 2001, viaja a EEUU, para asistir en el New York Aikikai de Sensei Yoshimitsu Yamada, para 
+                desarrollarse como Uchi-Deshi (discípulo interno), por el termino de 30 días.
+                Ha asistido a numerosos seminarios nacionales e internacionales, dictados por grandes maestros como Doshu Moriteru 
+                Ueshiba, Hombu Dojo Cho Mitsuteru Ueshiba,Yoshimitsu Yamada Shihan, Nobuyoshi Tamura Shihan, Seiichi Sugano Shihan, 
+                Ichiro Shibata Shihan, Ichihashi N. Shihan, Hayato Osawa Shihan, Sensei Okuyama, Sensei Kurita, Koichi Toriumi Shihan, 
+                Masatoshi Yasuno Shihan, Hiroshi Kato Shihan, Wagner Bull Sensei, Nelson Requena Sensei, Mitsuru Sobue Shihan, 
+                Hironobu Yamada Shihan, Yoshiaki Yokota Shihan, Makoto Ito Shihan, Takanori Kuribayashi Shihan, Sakurai Hiroyuki 
+                Shihan, entre otros.
+                A lo largo de estos años, a participado en numerosas exhibiciones, destacándose entre ellas las realizadas en el 
+                Centro Okinawense de Argentina, en el Jardín Japonés, en el Luna Park durante el Mundial de Taekwondo en el año 1999, 
+                en la Feria del Libro de la Rural, en el día del niño organizado por Mc Donald, Centro Cultural Adrogue y el 
+                Centenario de Judo en Argentina.</p>
+                <p>En el año 2005 y 2006 junto con los alumnos del CDA, logró coronarse Bi-campeón en el torneo multidisciplinario, 
+                como la mejor exhibición, en el Gran Champion Espíritu Marcial. En el año 2006 la productora Von Advertising a 
+                cargo del Licenciado Murphy Martín lo convoca para realizar un video técnico exclusivamente de Armas, que luego 
+                formaría parte de la popular Colección Espíritu Marcial.
+                Actualmente en el país es convocado por medios audiovisuales y gráficos, como Espíritu Marcial (TV-Multideporte), 
+                Artes Marciales y Deportes de Combate (TV-Multideporte), Revista Maestros, Revista Mundo Marcial, Revista Judo Karate, 
+                Portal de Internet Redmarcial, Tsu (Telefe), Much Music, Canal 9, FoxSports, Reality de Colombia (Clase para chicos 
+                de la academia), Urbann Nikkei, C5N, Acción marcial, etc.</p>
+                <p>En Octubre de 2007 fue galardonado como Artista Marcial del Año por el programa de Televisión Artes Marciales y 
+                deportes de Combate del Maestro Mario Troiano.
+                El 21 de Diciembre de 2007 participa representando Aikido en el evento más grande de Artes Marciales en América, 
+                llamado “El Golpe del Dragón” en el mítico Estadio Luna Park.
+                En Diciembre de 2011, se recibió de Abogado en la Universidad de Palermo.
+                En Febrero de 2012, luego del Fallecimiento de su Sensei y Padre, asume la Presidencia y la Dirección General del CDA.
+                Desde el 2012 a la actualidad invita Maestros de Japón y Latinoamérica para dictar seminarios en la Republica Argentina.
+                En el año 2017 organizó el Seminario Internacional AIC con 15 Maestros de toda Latinoamérica, con una participación 
+                de más de 300 personas.
+                En los años 2017, 2018 y 2019 participó junto a miembros de otras Organizaciones de Aikido Argentinas del All Japan 
+                Aikido Demostration en el Budokan de Tokyo.
+                En Octubre de 2019, dicta su primer Seminario Internacional en México.
+                El 12/01/2020 en el Kagami Biraki de Hombu Dojo, Doshu Moriteru Ueshiba y Hombu DojoCho Mitsuteru Ueshiba, le otorgan 
+                el 6° Dan Aikido Aikikai.</p>
+                <p>Constantemente viaja a Japón para practicar y aleccionarse con los Maestros de Hombu Dojo y Dojos de Japón.
+                Leonardo Sakanashi, como Instructor Profesional de AIKIDO, en la actualidad dicta y/o organiza clases regulares, 
+                especiales y Seminarios Nacional e Internacionales en toda la República Argentina, Venezuela, Chile, Colombia, 
+                Brasil, Uruguay, EEUU y México.</p>
+            </div>
+        </section>
+
 
     <!--Comienzo pie de página-->
     <footer class="grillaFooter">

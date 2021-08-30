@@ -22,36 +22,33 @@
         <header> 
             <div>
                 <div class="chuseiDojo">
-                    <img src="../img/Recurso5.png" alt="Chusei-Dojo">
+                    <a href="../index.html"><img src="../img/Recurso5.png" alt="Chusei-Dojo"></a>
                 </div>
             </div>
 
             <nav class="grillaNav nav"> <!--Barra de navegación-->
-                <a href="#" class="menu__sm">
+                <label for="menu__dropdown" class="menu__sm"><!--MENU HAMBURUGESA-->
                     <span class="iconify" data-icon="whh:menu" data-inline="false"></span> 
-                </a>
+                </label>
+
+                <input type="checkbox" id="menu__dropdown" hidden>
 
                 <ul class="menu__md">
                 
-                <li class="nav-item"><a href="../index.html"><img src="../img/logojime.png" alt="Logo" class="grillaNav__logoNav"></a></li>
-                <li class="nav-item"><a href="../index.html">INICIO</a></li>
-                
-                <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="queEsElAikido.html">¿Qué es el Aikido?</a></li>
-                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
-                    </ul>
-                </li>
-                
-                <li class="nav-item"><a href="diasyhorarios.html">DIAS Y HORARIOS</a></li>
-                <li class="nav-item"><a href="galeria.html">GALERIA</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="fotos.html">Fotos</a></li>
-                        <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="ubicacion.html">UBICACION</a></li>
-                <li class="nav-item"><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="../index.html" class="menu__link menu__link-active">INICIO</a></li>
+                    
+                    <li><a href="#" class="menu__link">SOBRE NOSOTROS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item menu__link" href="../paginas/queEsElAikido.html">¿Qué es el Aikido?</a></li>
+                            <li><a class="dropdown-item menu__link" href="../paginas/historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../paginas/diasyhorarios.html" class="menu__link">DIAS Y HORARIOS</a></li>
+                    <li><a href="../paginas/galeria.html" class="menu__link">GALERIA</a>                 
+                    </li>
+                    <li><a href="../paginas/ubicacion.html" class="menu__link">UBICACION</a></li>
+                    <li><a href="../paginas/contacto.html" class="menu__link">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
@@ -60,7 +57,7 @@
         <main class="container-xxl">
             <section class="row">
                 <div class="col">
-                    <div class="row">
+                    <div class="row container">
                         <img  class="logoMain" src="../img/logojime.png" alt="Logo">
                         <a class="btn btn-outline-danger boton" href="contacto.html" role="button">Empeza ya!</a>
                     </div>
@@ -73,7 +70,7 @@
             <h3>Dirección</h3>
             <p style="color: beige; margin-left: 10px;">Paul Groussac 2350, Ituzaingó, Provincia de Buenos Aires</p>
             <hr>
-            <a href="https://goo.gl/maps/nYUJPF6jnHaVehPDA"><img src="../img/mapa.png" alt="mapa"></a>      
+            <a href="https://goo.gl/maps/nYUJPF6jnHaVehPDA"><img src="../img/mapa.png" alt="mapa" class="mapa"></a>      
         </div>
 
 

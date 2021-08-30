@@ -22,33 +22,33 @@
         <header> 
             <div>
                 <div class="chuseiDojo">
-                    <img src="../img/Recurso5.png" alt="Chusei-Dojo">
+                    <a href="../index.html"><img src="../img/Recurso5.png" alt="Chusei-Dojo"></a>
                 </div>
             </div>
 
             <nav class="grillaNav nav"> <!--Barra de navegación-->
-                <a href="#" class="menu__sm">
+                <label for="menu__dropdown" class="menu__sm"><!--MENU HAMBURUGESA-->
                     <span class="iconify" data-icon="whh:menu" data-inline="false"></span> 
-                </a>
+                </label>
+
+                <input type="checkbox" id="menu__dropdown" hidden>
 
                 <ul class="menu__md">
                 
-                <li class="nav-item"><a href="../index.html"><img src="../img/logojime.png" alt="Logo" class="grillaNav__logoNav"></a></li>
-                <li class="nav-item"><a href="../index.html">INICIO</a></li>
-                
-                <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="queEsElAikido.html">¿Qué es el Aikido?</a></li>
-                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
-                    </ul>
-                </li>
-                
-                <li class="nav-item"><a href="diasyhorarios.html">DIAS Y HORARIOS</a></li>
-                <li class="nav-item"><a href="galeria.html">GALERIA</a>
+                    <li><a href="../index.html" class="menu__link menu__link-active">INICIO</a></li>
                     
-                </li>
-                <li class="nav-item"><a href="ubicacion.html">UBICACION</a></li>
-                <li class="nav-item"><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="#" class="menu__link">SOBRE NOSOTROS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item menu__link" href="../paginas/queEsElAikido.html">¿Qué es el Aikido?</a></li>
+                            <li><a class="dropdown-item menu__link" href="../paginas/historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../paginas/diasyhorarios.html" class="menu__link">DIAS Y HORARIOS</a></li>
+                    <li><a href="../paginas/galeria.html" class="menu__link">GALERIA</a>                 
+                    </li>
+                    <li><a href="../paginas/ubicacion.html" class="menu__link">UBICACION</a></li>
+                    <li><a href="../paginas/contacto.html" class="menu__link">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
@@ -57,26 +57,57 @@
         <main class="container-xxl">
             <section class="row">
                 <div class="col">
-                    <div class="row">
+                    <div class="row container">
                         <img  class="logoMain" src="../img/logojime.png" alt="Logo">
-                        <a class="btn btn-outline-danger boton" href="contacto.html" role="button">Empeza ya!</a>
+                        <a class="btn btn-outline-danger boton" href="paginas/contacto.html" role="button">Empeza ya!</a>
                     </div>
                 </div>
             </section>
         </main>>
 
-    <section class="sectionSobreNosotros">
-        <img src="../img/persona-practicando-aikido-sobre-fondo-negro_180224-132.jpg" alt="Silueta">
-        <h2>¿Qué es el aikido?</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi soluta eaque qui voluptatum reprehenderit 
-            libero ut itaque vel dicta. Nobis veniam obcaecati odit. Delectus exercitationem, alias porro ab voluptatibus
-            vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi, magnam accusamus nulla eos numquam 
-            quas nihil odit vero officia corrupti. Tempore mollitia laboriosam non, numquam voluptas at beatae ad!</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi soluta eaque qui voluptatum reprehenderit 
-            libero ut itaque vel dicta. Nobis veniam obcaecati odit. Delectus exercitationem, alias porro ab voluptatibus
-            vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi, magnam accusamus nulla eos numquam 
-            quas nihil odit vero officia corrupti. Tempore mollitia laboriosam non, numquam voluptas at beatae ad!</p>
+    <section class="queEsElAikido">
+        <h2 class="subtitulo">¿Qué es el aikido?</h2>
+        <p class="textoParrafo">El AIKIDO fue creado por Morihei Ueshiba, conocido por los practicantes como O’Sensei (que significa Gran Maestro).
+            O’Sensei, un experto en diversas artes marciales, creó el AIKIDO a partir del deseo de que el individuo desarrolle 
+            al máximo su potencial como tal, tanto física como mentalmente.
+            Aikido es un camino abierto a todas las personas que aspiren a ser uno con la naturaleza y respetarla. 
+            “AI” (合) se interpreta como armonía o unión; “KI” (気) es la energía universal o espíritu y “DO” (堵) es camino o vía.
+            Las prácticas se realizan en un marco de respeto, cordialidad y camaradería. La vida en el Aikido implica además la 
+            responsabilidad en el cuidado de sí mismo y del otro como marco de convivencia pacífico y en unión.</p>
+        
+        <img src="" alt="">
+        <p class="textoParrafo">Uno de los principios más importantes del AIKIDO es el que sostiene que la mente y el cuerpo son uno. Cuando el individuo 
+            actúa teniéndolo en cuenta, desarrolla gran poder. Ya que los movimientos del AIKIDO son de naturaleza circular, requiriéndose 
+            flexibilidad, equilibrio y timing, no hay necesidad de entrar en conflicto con la fuerza del oponente. Al acompañar el ataque 
+            mediante dichos movimientos, es posible tomar control de la fuerza que emplea el atacante y redirigirlo en forma segura y efectiva. 
+            La práctica también incluye el aprendizaje de caídas, las cuales constituyen una forma de defensa en sí mismas. 
+            Las técnicas de AIKIDO no combinan fuerza contra fuerza, motivo por el cual no es necesario ser particularmente fuerte para comenzar 
+            a practicarlo. Asimismo, dichas técnicas son de naturaleza defensiva, y no se requiere de una personalidad agresiva. No obstante ello, 
+            mediante la práctica del AIKIDO usted se convertirá en una persona fuerte y desarrollará seguridad y potencia en sus movimientos.
+            Ya que el AIKIDO se practica de a dos, usted tiene la posibilidad de aprender de otros al mismo tiempo que los ayuda a aprender de usted. 
+            Esta apertura mental que caracteriza a la práctica crea un clima sumamente sano en el Dojo (lugar de práctica).
+            En síntesis, el AIKIDO es bueno para su cuerpo, mente y corazón. Como si todo eso fuera poco, el AIKIDO también es divertido. 
+            No es correcto pensar que el AIKIDO cambia a la gente. Sin embargo, puede decirse que la gente puede cambiar a través del AIKIDO.
+</p>
     </section>
+
+    <span class="linea"></span>
+
+    <Section class="queEsElAikido">
+        <h2 class="subtitulo">¿Quiénes práctican Aikido?</h2>
+        <p class="textoParrafo">Por su principio de no violencia y armonización, el Arte no tiene limitaciones de sexo ni de edad ya que cada uno practica de acuerdo a sus 
+            posibilidades y a su propio ritmo.
+            Desde la infancia hasta la tercera edad, hombres y mujeres, practican AIKIDO alrededor del mundo. Además, por el tipo de movimientos y al no 
+            utilizar la fuerza física durante la práctica, el AIKIDO ofrece muchos beneficios para la salud, como corrección de problemas posturales, 
+            eliminación de tensiones, correcto manejo de la respiración, entre otros.</p>
+        <p class="textoParrafo">El AIKIDO es una Arte Marcial que se basa en la "No Violencia y la Armonización". Porque como dice O’Sensei 
+            en su libro El Arte de la Paz: “Todos tenemos un espíritu que puede ser refinado, un cuerpo que puede ser 
+            entrenado de cierta manera, un sendero conveniente para seguir. Estás aquí con el sólo propósito de darte 
+            cuenta de tu divinidad interior y manifestar tu iluminación innata. Alimenta la paz en tu propia vida y luego 
+            aplica el arte a todo lo que encuentres”.
+            </p>
+
+    </Section>
 
     <!--Comienzo pie de página-->
     <footer class="grillaFooter">

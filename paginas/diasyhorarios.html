@@ -22,25 +22,33 @@
         <header> 
             <div>
                 <div class="chuseiDojo">
-                    <img src="../img/Recurso5.png" alt="Chusei-Dojo">
+                    <a href="../index.html"><img src="../img/Recurso5.png" alt="Chusei-Dojo"></a>
                 </div>
             </div>
 
-            <nav class="row grillaNav nav"> <!--Barra de navegación-->
-                <ul>
-                <li class="col-1.5 nav-item"><a href="../index.html"><img src="../img/logojime.png" alt="Logo" class="grillaNav__logoNav"></a></li>
-                <li class="col nav-item"><a href="../index.html">INICIO</a></li>
-                <li class="col"><a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="queEsElAikido.html">¿Qué es el Aikido?</a></li>
-                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
-                    </ul>
-                </li>
-                <li class="col nav-item"><a href="diasyhorarios.html">DIAS Y HORARIOS</a></li>
-                <li class="col nav-item"><a href="galeria.html">GALERIA</a>
-                </li>
-                <li class="col nav-item"><a href="ubicacion.html">UBICACION</a></li>
-                <li class="col nav-item"><a href="contacto.html">CONTACTO</a></li>
+            <nav class="grillaNav nav"> <!--Barra de navegación-->
+                <label for="menu__dropdown" class="menu__sm"><!--MENU HAMBURUGESA-->
+                    <span class="iconify" data-icon="whh:menu" data-inline="false"></span> 
+                </label>
+
+                <input type="checkbox" id="menu__dropdown" hidden>
+
+                <ul class="menu__md">
+                
+                    <li><a href="../index.html" class="menu__link menu__link-active">INICIO</a></li>
+                    
+                    <li><a href="#" class="menu__link">SOBRE NOSOTROS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item menu__link" href="../paginas/queEsElAikido.html">¿Qué es el Aikido?</a></li>
+                            <li><a class="dropdown-item menu__link" href="../paginas/historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="../paginas/diasyhorarios.html" class="menu__link">DIAS Y HORARIOS</a></li>
+                    <li><a href="../paginas/galeria.html" class="menu__link">GALERIA</a>                 
+                    </li>
+                    <li><a href="../paginas/ubicacion.html" class="menu__link">UBICACION</a></li>
+                    <li><a href="../paginas/contacto.html" class="menu__link">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,28 +57,34 @@
         <main class="container-xxl">
             <section class="row">
                 <div class="col">
-                    <div class="row">
+                    <div class="row container">
                         <img  class="logoMain" src="../img/logojime.png" alt="Logo">
                         <a class="btn btn-outline-danger boton" href="contacto.html" role="button">Empeza ya!</a>
                     </div>
                 </div>
             </section>
-        </main>>
+        </main>
+        
+<!--Comienzo de card-->
+        <div class="containerCard">
 
-        <div>
-            <h3>Clases para ninos/as, adolescentes y adultos/as.</h3>
-            <h3>Apartir de los 12 años</h3>
-            
-            <section class="card">
-                <header>
-                    <img src="../img/dojo.jpg" alt="Dojo">
-                </header>
-                <section>
-                    <h2>Días y Horarios</h2>
-                    <h3>Lunes, Miércoles y Viernes</h3>
-                    <p>20 a 21.30 hs</p>
-                </section>
-            </section>
+            <div class="card-container">
+                <div class="header">
+                    <a href="#">
+                        <img src="../img/dojo.jpg" alt="dojo">
+                    </a>
+
+                    <h2>Chusei-Dojo</h2>
+                    <h4>Clases para niños/as, adolescentes y adultos/as</h4>
+                </div>
+
+                <div class="descripcion">
+                    <h2>Días y horarios</h2>
+                    <h4>Lunes, Miércoles y Viernes</h4>
+                    <h4>20 a 21.30 HS</h4>
+                </div>
+            </div>
+
         </div>
 
             
